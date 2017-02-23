@@ -124,11 +124,11 @@ class Mellatbank extends Component
                     $RefId =$res[1];
                     $controller =  \Yii::$app->controller;
                     if( $this->renderAjax ) {
-                        echo $controller->renderAjax('@frontend/yii2-mellatbank/view', [
+                        echo $controller->renderAjax('@vendor/ahmadrezaei/yii2-mellatbank/views/form', [
                             'RefId' => $RefId
                         ]);
                     } else {
-                        echo $controller->render('@frontend/yii2-mellatbank/view', [
+                        echo $controller->render('@vendor/ahmadrezaei/yii2-mellatbank/views/form', [
                             'RefId' => $RefId
                         ]);
                     }
