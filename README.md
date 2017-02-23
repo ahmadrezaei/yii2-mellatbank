@@ -35,6 +35,7 @@ return [
             'username' => 'YOUR-USERNAME',
             'password' => 'YOUR-PASSWORD',
             'terminal' => 'YOUR-TERMINAL-ID',
+            'mysql' => true, // If you want to save records in db
         ]
         // ...
     ],
@@ -44,7 +45,7 @@ return [
 
 If you want to save records in database, create migrations:
 
-```php
+```
 php yii migrate -p=@vendor/ahmadrezaei/yii2-mellatbank/migrations 
 ```
 
