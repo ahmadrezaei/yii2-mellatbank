@@ -42,6 +42,13 @@ return [
 ];
 ```
 
+If you want to save records in database, create migrations:
+
+```php
+php yii migrate -p=@vendor/ahmadrezaei/yii2-mellatbank/migrations 
+```
+
+
 
 Usage
 -----
