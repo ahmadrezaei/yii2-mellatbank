@@ -1,0 +1,22 @@
+{
+    "name": "ahmadrezaei/yii2-mellatbank",
+    "description": "By this extension you can add mellat bank gateway to your yii2 project",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","mellatbank","gateway","payment"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmad Rezaei",
+            "email": "parsarezaei53@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "fergusean/nusoap": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ahmadrezaei\\yii\\mellatbank\\": ""
+        }
+    }
+}
