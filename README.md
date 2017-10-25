@@ -31,7 +31,7 @@ After extension is installed you need to setup auth client collection applicatio
 return [
     'components' => [
         'mellatbank' => [
-            'class' => 'ahmadrezaei\yii\mellatbank\Mellatbank',
+            'class' => 'ahmadrezaei\yii\mellatbank\components\Mellatbank',
             'username' => 'YOUR-USERNAME',
             'password' => 'YOUR-PASSWORD',
             'terminal' => 'YOUR-TERMINAL-ID',
@@ -59,7 +59,7 @@ For create a payment request:
 ```php
 $amount = 10000; // Rial
 $callBackUrl = Url::to(['callback']); // callback url
-/* @var $mellatbank \ahmadrezaei\yii\mellatbank\Mellatbank */
+/* @var $mellatbank \ahmadrezaei\yii\mellatbank\components\Mellatbank */
 $mellatbank = Yii::$app->mellatbank;
 $mellatbank->createPayment($amount, $callBackUrl);
 ```
@@ -67,7 +67,7 @@ $mellatbank->createPayment($amount, $callBackUrl);
 For verify payment request:
 
 ```php
-/* @var $mellatbank \ahmadrezaei\yii\mellatbank\Mellatbank */
+/* @var $mellatbank \ahmadrezaei\yii\mellatbank\components\Mellatbank */
 $mellatbank = Yii::$app->mellatbank;
 $result = $mellatbank->verify();
 if( $result ) {
